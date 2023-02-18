@@ -1,4 +1,7 @@
 let serial = 0;
+
+// Create function to get input value
+
 function getInputValueById(elementId){
   const getElement = document.getElementById(elementId);
   
@@ -6,6 +9,9 @@ function getInputValueById(elementId){
   const getElementValue = parseFloat(getElementValueString);
   return getElementValue
 } 
+
+//  function for create area calculation element
+
 function createTableElement(geom){
    
     const container = document.getElementById("table-container");
@@ -19,7 +25,8 @@ function createTableElement(geom){
     `;
     container.appendChild(tr);
 }
-
+ 
+//  create event handler 
 let area 
 
 document.getElementById('triangle-btn').addEventListener('click', function(){
@@ -47,6 +54,7 @@ document.getElementById('triangle-btn').addEventListener('click', function(){
    
 })
 
+
 document.getElementById('rectangle-btn').addEventListener('click', function(){
     const inputValueW = getInputValueById('rectangle-inputW')
     const inputValueI = getInputValueById('rectangle-inputI')
@@ -68,6 +76,7 @@ document.getElementById('rectangle-btn').addEventListener('click', function(){
   createTableElement('Rectangle')
 
 })
+
 
 document.getElementById('parallelogram-btn').addEventListener('click', function(){
   const inputValueB = getInputValueById('parallelogram-inputB')
@@ -92,6 +101,7 @@ createTableElement('Parallelogram')
 
 })
 
+
 document.getElementById('rhombos-btn').addEventListener('click', function(){
   const inputValueD1 = getInputValueById('rhombos-inputD1')
   const inputValueD2 = getInputValueById('rhombos-inputD2')
@@ -115,6 +125,7 @@ createTableElement('Rhombus')
 
 })
 
+
 document.getElementById('pentagon-btn').addEventListener('click', function(){
   const inputValueB = getInputValueById('pentagon-inputB')
   const inputValueA = getInputValueById('pentagon-inputA')
@@ -137,6 +148,7 @@ if(isNaN(inputValueB) == true || isNaN(inputValueA) == true){
 createTableElement('Pentagon')
 
 })
+
 
 document.getElementById('ellipse-btn').addEventListener('click', function(){
   const ellipseA = getInputValueById('ellipse-inputA')
@@ -162,10 +174,7 @@ createTableElement('Ellipse')
 })
 
 
-
-
-
-
+// create function for random color of card
 
  function random_bg_color() {
   var x = Math.floor(Math.random() * 256);
@@ -177,11 +186,15 @@ console.log(bgColor);
  return  bgColor;
   }
 
+  // function for get id of card
+
   function getIdForBgColor(cardId){
    const getIdColor = document.getElementById(cardId);
    return getIdColor 
   }
 
+  // event handler for random color
+  
   getIdForBgColor("triangle-bg").addEventListener("mouseover", function() {
    getIdForBgColor("triangle-bg").style.backgroundColor = random_bg_color();  
 });
