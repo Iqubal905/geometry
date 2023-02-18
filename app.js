@@ -28,17 +28,19 @@ document.getElementById('triangle-btn').addEventListener('click', function(){
     const inputValueB = getInputValueById('triangle-inputB')
     
   if(isNaN(inputValueA) == true || isNaN(inputValueB) == true){
-    alert('please give positive number')
+    alert('Please give positive number')
      return false
   }else{
-    if(inputValueA < 0 || inputValueB < 0){
-        alert('Cannot be negetive number')
+    if(inputValueA <= 0 || inputValueB <= 0){
+        alert('Cannot be negetive number or 0')
         return false
           }else{
             serial += 1;
               const calculated =  0.5 * inputValueA  * inputValueB  
-            area = calculated.toFixed(2)  
+            area = calculated.toFixed(2) 
+           
     }
+   
   } 
   
   createTableElement('Triangle')
@@ -50,14 +52,16 @@ document.getElementById('rectangle-btn').addEventListener('click', function(){
     const inputValueI = getInputValueById('rectangle-inputI')
     
   if(isNaN(inputValueW) == true || isNaN(inputValueI) == true){
-    alert('please give positive number')
+    alert('Please give positive number')
         return false
   }else{
-    if(inputValueW < 0 || inputValueI < 0){
-        alert('Cannot be negetive number')
+    if(inputValueW <= 0 || inputValueI <= 0){
+        alert('Cannot be negetive number or 0')
            return false       
           }else{
-      area =  inputValueW  * inputValueI   
+            serial += 1;
+            const calculated  =  inputValueW  * inputValueI  
+            area = calculated.toFixed(2)   
     }
   } 
   
@@ -65,25 +69,100 @@ document.getElementById('rectangle-btn').addEventListener('click', function(){
 
 })
 
-document.getElementById('rectangle-btn').addEventListener('click', function(){
-  const inputValueW = getInputValueById('rectangle-inputW')
-  const inputValueI = getInputValueById('rectangle-inputI')
+document.getElementById('parallelogram-btn').addEventListener('click', function(){
+  const inputValueB = getInputValueById('parallelogram-inputB')
+  const inputValueH = getInputValueById('parallelogram-inputH')
   
-if(isNaN(inputValueW) == true || isNaN(inputValueI) == true){
-  alert('please give positive number')
+if(isNaN(inputValueB) == true || isNaN(inputValueH) == true){
+  alert('Please give positive number')
       return false
 }else{
-  if(inputValueW < 0 || inputValueI < 0){
-      alert('Cannot be negetive number')
+  if(inputValueB <= 0 || inputValueH <= 0){
+      alert('Cannot be negetive number or 0')
          return false       
         }else{
-    area =  inputValueW  * inputValueI   
+          
+          serial += 1;
+          const calculated  =  inputValueB  * inputValueH  
+          area = calculated.toFixed(2)
   }
 } 
 
-createTableElement('Rectangle')
+createTableElement('Parallelogram')
 
 })
+
+document.getElementById('rhombos-btn').addEventListener('click', function(){
+  const inputValueD1 = getInputValueById('rhombos-inputD1')
+  const inputValueD2 = getInputValueById('rhombos-inputD2')
+  
+if(isNaN(inputValueD1) == true || isNaN(inputValueD2) == true){
+  alert('Please give positive number')
+      return false
+}else{
+  if(inputValueD1 <= 0 || inputValueD2 <= 0){
+      alert('Cannot be negetive number or 0')
+         return false       
+        }else{
+          
+          serial += 1;
+          const calculated  =  0.5 * inputValueD1  * inputValueD2  
+          area = calculated.toFixed(2)
+  }
+} 
+
+createTableElement('Rhombus')
+
+})
+
+document.getElementById('pentagon-btn').addEventListener('click', function(){
+  const inputValueB = getInputValueById('pentagon-inputB')
+  const inputValueA = getInputValueById('pentagon-inputA')
+  
+if(isNaN(inputValueB) == true || isNaN(inputValueA) == true){
+  alert('Please give positive number')
+      return false
+}else{
+  if(inputValueB <= 0 || inputValueA <= 0){
+      alert('Cannot be negetive number or 0')
+         return false       
+        }else{
+          
+          serial += 1;
+          const calculated  = 0.5 * inputValueB  * inputValueA  
+          area = calculated.toFixed(2)
+  }
+} 
+
+createTableElement('Pentagon')
+
+})
+
+document.getElementById('ellipse-btn').addEventListener('click', function(){
+  const ellipseA = getInputValueById('ellipse-inputA')
+  const ellipseB = getInputValueById('ellipse-inputB')
+  
+if(isNaN(ellipseA) == true || isNaN(ellipseB) == true){
+  alert('Please give positive number')
+      return false
+}else{
+  if(ellipseA <= 0 || ellipseB <= 0){
+      alert('Cannot be negetive number or 0')
+         return false       
+        }else{
+          
+          serial += 1;
+          const calculated  = 3.14 * ellipseA  * ellipseB  
+          area = calculated.toFixed(2)
+  }
+} 
+
+createTableElement('Ellipse')
+
+})
+
+
+
 
 
 
