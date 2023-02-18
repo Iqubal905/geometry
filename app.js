@@ -87,5 +87,44 @@ createTableElement('Rectangle')
 
 
 
+ function random_bg_color() {
+  var x = Math.floor(Math.random() * 256);
+  var y = Math.floor(Math.random() * 256);
+  var z = Math.floor(Math.random() * 256);
+  var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+console.log(bgColor);
+
+ return  bgColor;
+  }
+
+  function getIdForBgColor(cardId){
+   const getIdColor = document.getElementById(cardId);
+   return getIdColor 
+  }
+
+  getIdForBgColor("triangle-bg").addEventListener("mouseover", function() {
+   getIdForBgColor("triangle-bg").style.backgroundColor = random_bg_color();  
+});
+getIdForBgColor("rectangle-bg").addEventListener("mouseover", function() {
+  getIdForBgColor("rectangle-bg").style.backgroundColor = random_bg_color();  
+});
+getIdForBgColor("parallelogram-bg").addEventListener("mouseover", function() {
+  getIdForBgColor("parallelogram-bg").style.backgroundColor = random_bg_color();  
+});
+getIdForBgColor("rhombus-bg").addEventListener("mouseover", function() {
+  getIdForBgColor("rhombus-bg").style.backgroundColor = random_bg_color();  
+});
+getIdForBgColor("pentagon-bg").addEventListener("mouseover", function() {
+  getIdForBgColor("pentagon-bg").style.backgroundColor = random_bg_color();  
+});
+getIdForBgColor("ellipse-bg").addEventListener("mouseover", function() {
+  getIdForBgColor("ellipse-bg").style.backgroundColor = random_bg_color();  
+});
+getIdForBgColor("cal-bg").addEventListener("mouseover", function() {
+  getIdForBgColor("cal-bg").style.backgroundColor = random_bg_color();  
+});
+
+
+
 
 
