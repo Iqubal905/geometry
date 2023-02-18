@@ -6,10 +6,9 @@ function getInputValueById(elementId){
   const getElementValue = parseFloat(getElementValueString);
   return getElementValue
 } 
-function createTableElement(){
+function createTableElement(geom){
    
     const container = document.getElementById("table-container");
-    console.log(container);
     const tr = document.createElement('tr');
     tr.innerHTML =`
     <td>${1}</td>
@@ -29,37 +28,37 @@ document.getElementById('triangle-btn').addEventListener('click', function(){
     
   if(isNaN(inputValueA) == true || isNaN(inputValueB) == true){
     alert('please give positive number')
-
+     return false
   }else{
     if(inputValueA < 0 || inputValueB < 0){
         alert('Cannot be negetive number')
-
+        return false
           }else{
       area =  0.5 * inputValueA  * inputValueB    
     }
   } 
-  let geom = 'tt'
-  createTableElement()
-
+  
+  createTableElement('Triangle')
+   
 })
 
 document.getElementById('rectangle-btn').addEventListener('click', function(){
-    const inputValueA = getInputValueById('triangle-inputA')
-    const inputValueB = getInputValueById('triangle-inputB')
+    const inputValueW = getInputValueById('rectangle-inputW')
+    const inputValueI = getInputValueById('rectangle-inputI')
     
-  if(isNaN(inputValueA) == true || isNaN(inputValueB) == true){
+  if(isNaN(inputValueW) == true || isNaN(inputValueI) == true){
     alert('please give positive number')
-
+        return false
   }else{
-    if(inputValueA < 0 || inputValueB < 0){
+    if(inputValueW < 0 || inputValueI < 0){
         alert('Cannot be negetive number')
-
+           return false       
           }else{
-      area =  0.5 * inputValueA  * inputValueB    
+      area =  inputValueW  * inputValueI   
     }
   } 
-  const geom = 'yyyy'
-  createTableElement(geom)
+  
+  createTableElement('Rectangle')
 
 })
 
