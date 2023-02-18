@@ -36,7 +36,8 @@ document.getElementById('triangle-btn').addEventListener('click', function(){
         return false
           }else{
             serial += 1;
-      area =  0.5 * inputValueA  * inputValueB    
+              const calculated =  0.5 * inputValueA  * inputValueB  
+            area = calculated.toFixed(2)  
     }
   } 
   
