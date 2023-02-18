@@ -12,7 +12,7 @@
     <div class="md:flex gap-4">
         <div class=" md:w-9/12  ">
          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div class=" bg-yellow-300 grid justify-items-center mx-auto py-14">
+            <div class=" bg-yellow-300 grid justify-items-center mx-auto py-14 px-8">
                <div class="mx-4">
                 <img src="images/triangle.png" alt="" srcset="">
                </div>
@@ -24,7 +24,7 @@
                </div>
                <button id="triangle-btn" class="bg-pink-400 w-full py-2 text-white font-semibold rounded-lg">Calculate</button>
             </div>
-            <div class="bg-yellow-300 grid justify-items-center px-14 py-14">
+            <div class="bg-yellow-300 grid justify-items-center mx-auto  py-14 px-8">
                 <div class="mx-4">
                  <img src="images/rectangle.png" alt="" srcset="">
                 </div>
@@ -36,53 +36,53 @@
                 </div>
                 <button id="rectangle-btn" class="bg-pink-400 w-full py-2 text-white font-semibold rounded-lg">Calculate</button>
              </div>
-             <div class="bg-yellow-300 grid justify-items-center px-14 py-14">
+             <div class="bg-yellow-300 grid justify-items-center mx-auto px-8 py-14">
                 <div class="mx-4">
                  <img src="images/parallelogram.png" alt="" srcset="">
                 </div>
-                <h2 class="mt-8">Triangle</h2>
-                <h4 class="mb-5">Area(A)= .5 * b * h</h4>
+                <h2 class="mt-8">Parallelogram</h2>
+                <h4 class="mb-5">Area(A)= b * h</h4>
                 <div class="flex gap-4 mb-8 mx-1">
-                 <input type="number" placeholder="b" class="w-6/12 pl-2"><span>cm</span>
-                 <input type="number" placeholder="a" class="w-6/12 pl-2"><span>cm</span>
+                 <input id="parallelogram-inputB" type="number" placeholder="b" class="w-6/12 pl-2"><span>cm</span>
+                 <input id="parallelogram-inputH" type="number" placeholder="h" class="w-6/12 pl-2"><span>cm</span>
                 </div>
-                <button class="bg-pink-400 w-full py-2 text-white font-semibold rounded-lg">Calculate</button>
+                <button id="parallelogram-btn" class="bg-pink-400 w-full py-2 text-white font-semibold rounded-lg">Calculate</button>
              </div>
-             <div class="bg-yellow-300 grid justify-items-center px-14 py-14">
+             <div class="bg-yellow-300 grid justify-items-center mx-auto px-8 py-14">
                 <div class="mx-4">
                  <img src="images/rhombus.png" alt="" srcset="">
                 </div>
-                <h2 class="mt-8">Triangle</h2>
-                <h4 class="mb-5">Area(A)= .5 * b * h</h4>
+                <h2 class="mt-8">Rhombus</h2>
+                <h4 class="mb-5">Area(A)= .5 * d1 * d2</h4>
                 <div class="flex gap-4 mb-8 mx-1">
-                 <input type="number" placeholder="b" class="w-6/12 pl-2"><span>cm</span>
-                 <input type="number" placeholder="a" class="w-6/12 pl-2"><span>cm</span>
+                 <input id="rhombos-inputD1" type="number" placeholder="d" class="w-6/12 pl-2"><span>cm</span>
+                 <input id="rhombos-inputD2" type="number" placeholder="d" class="w-6/12 pl-2"><span>cm</span>
                 </div>
-                <button class="bg-pink-400 w-full py-2 text-white font-semibold rounded-lg">Calculate</button>
+                <button id="rhombos-btn" class="bg-pink-400 w-full py-2 text-white font-semibold rounded-lg">Calculate</button>
              </div>
-             <div class="bg-yellow-300 grid justify-items-center px-14 py-14">
+             <div class="bg-yellow-300 grid justify-items-center mx-auto px-8 py-14">
                 <div class="mx-4">
                  <img src="images/pentagon.png" alt="" srcset="">
                 </div>
-                <h2 class="mt-8">Triangle</h2>
-                <h4 class="mb-5">Area(A)= .5 * b * h</h4>
+                <h2 class="mt-8">Pentagon</h2>
+                <h4 class="mb-5">Area(A)= .5 * p * b</h4>
                 <div class="flex gap-4 mb-8 mx-1">
-                 <input type="number" placeholder="b" class="w-6/12 pl-2"><span>cm</span>
-                 <input type="number" placeholder="a" class="w-6/12 pl-2"><span>cm</span>
+                 <input id="pentagon-inputB" type="number" placeholder="b" class="w-6/12 pl-2"><span>cm</span>
+                 <input id="pentagon-inputA" type="number" placeholder="a" class="w-6/12 pl-2"><span>cm</span>
                 </div>
-                <button class="bg-pink-400 w-full py-2 text-white font-semibold rounded-lg">Calculate</button>
+                <button id="pentagon-btn" class="bg-pink-400 w-full py-2 text-white font-semibold rounded-lg">Calculate</button>
              </div>
-             <div class="bg-yellow-300 grid justify-items-center px-14 py-14">
+             <div class="bg-yellow-300 grid justify-items-center mx-auto px-8 py-14">
                 <div class="mx-4">
                  <img src="images/ellipse.png" alt="" srcset="">
                 </div>
-                <h2 class="mt-8">Triangle</h2>
-                <h4 class="mb-5">Area(A)= .5 * b * h</h4>
+                <h2 class="mt-8">Ellipse</h2>
+                <h4 class="mb-5">Area(A)= ab</h4>
                 <div class="flex gap-4 mb-8 mx-1">
-                 <input type="number" placeholder="b" class="w-6/12 pl-2"><span>cm</span>
-                 <input type="number" placeholder="a" class="w-6/12 pl-2"><span>cm</span>
+                 <input id="ellipse-inputA" type="number" placeholder="a" class="w-6/12 pl-2"><span>cm</span>
+                 <input id="ellipse-inputB" type="number" placeholder="b" class="w-6/12 pl-2"><span>cm</span>
                 </div>
-                <button class="bg-pink-400 w-full py-2 text-white font-semibold rounded-lg">Calculate</button>
+                <button  id="ellipse-btn" class="bg-pink-400 w-full py-2 text-white font-semibold rounded-lg">Calculate</button>
              </div>
          </div>
 

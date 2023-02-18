@@ -62,4 +62,28 @@ document.getElementById('rectangle-btn').addEventListener('click', function(){
 
 })
 
+document.getElementById('rectangle-btn').addEventListener('click', function(){
+  const inputValueW = getInputValueById('rectangle-inputW')
+  const inputValueI = getInputValueById('rectangle-inputI')
+  
+if(isNaN(inputValueW) == true || isNaN(inputValueI) == true){
+  alert('please give positive number')
+      return false
+}else{
+  if(inputValueW < 0 || inputValueI < 0){
+      alert('Cannot be negetive number')
+         return false       
+        }else{
+    area =  inputValueW  * inputValueI   
+  }
+} 
+
+createTableElement('Rectangle')
+
+})
+
+
+
+
+
 
