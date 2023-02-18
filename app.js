@@ -14,7 +14,7 @@ function createTableElement(geom){
     <td>${1}</td>
     <td class="pr-2 pl-1">${geom}</td>
     <td>${area}</td>
-    <td>cm</td>
+    <td><sup>2</sup></td>
     <td><button class="bg-red-300 text-sm ml-2">Convert to m</button>
     `;
     container.appendChild(tr);
