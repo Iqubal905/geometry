@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+   <section class="my-20 lg:mx-20">
+    <div class="md:flex gap-4">
+        <div class=" md:w-9/12  ">
+         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class=" bg-yellow-300 grid justify-items-center mx-auto py-14">
+               <div class="mx-4">
+                <img src="images/triangle.png" alt="" srcset="">
+               </div>
+               <h2 class="mt-8">Triangle</h2>
+               <h4 class="mb-5">Area(A)= .5 * b * h</h4>
+               <div class="flex gap-4 mb-8 mx-1">
+                <input id="triangle-inputA" type="number" placeholder="b" class="w-6/12 pl-2"><span>cm</span>
+                <input id="triangle-inputB" type="number" placeholder="a" class="w-6/12 pl-2"><span>cm</span>
+               </div>
+               <button id="triangle-btn" class="bg-pink-400 w-full py-2 text-white font-semibold rounded-lg">Calculate</button>
+            </div>
+            <div class="bg-yellow-300 grid justify-items-center px-14 py-14">
+                <div class="mx-4">
+                 <img src="images/rectangle.png" alt="" srcset="">
+                </div>
+                <h2 class="mt-8">Rectangle</h2>
+                <h4 class="mb-5">Area(A)= W * I</h4>
+                <div class="flex gap-4 mb-8 mx-1">
+                 <input type="number" placeholder="W" class="w-6/12 pl-2"><span>cm</span>
+                 <input type="number" placeholder="I" class="w-6/12 pl-2"><span>cm</span>
+                </div>
+                <button id="rectangle-btn" class="bg-pink-400 w-full py-2 text-white font-semibold rounded-lg">Calculate</button>
+             </div>
+             <div class="bg-yellow-300 grid justify-items-center px-14 py-14">
+                <div class="mx-4">
+                 <img src="images/parallelogram.png" alt="" srcset="">
+                </div>
+                <h2 class="mt-8">Triangle</h2>
+                <h4 class="mb-5">Area(A)= .5 * b * h</h4>
+                <div class="flex gap-4 mb-8 mx-1">
+                 <input type="number" placeholder="b" class="w-6/12 pl-2"><span>cm</span>
+                 <input type="number" placeholder="a" class="w-6/12 pl-2"><span>cm</span>
+                </div>
+                <button class="bg-pink-400 w-full py-2 text-white font-semibold rounded-lg">Calculate</button>
+             </div>
+             <div class="bg-yellow-300 grid justify-items-center px-14 py-14">
+                <div class="mx-4">
+                 <img src="images/rhombus.png" alt="" srcset="">
+                </div>
+                <h2 class="mt-8">Triangle</h2>
+                <h4 class="mb-5">Area(A)= .5 * b * h</h4>
+                <div class="flex gap-4 mb-8 mx-1">
+                 <input type="number" placeholder="b" class="w-6/12 pl-2"><span>cm</span>
+                 <input type="number" placeholder="a" class="w-6/12 pl-2"><span>cm</span>
+                </div>
+                <button class="bg-pink-400 w-full py-2 text-white font-semibold rounded-lg">Calculate</button>
+             </div>
+             <div class="bg-yellow-300 grid justify-items-center px-14 py-14">
+                <div class="mx-4">
+                 <img src="images/pentagon.png" alt="" srcset="">
+                </div>
+                <h2 class="mt-8">Triangle</h2>
+                <h4 class="mb-5">Area(A)= .5 * b * h</h4>
+                <div class="flex gap-4 mb-8 mx-1">
+                 <input type="number" placeholder="b" class="w-6/12 pl-2"><span>cm</span>
+                 <input type="number" placeholder="a" class="w-6/12 pl-2"><span>cm</span>
+                </div>
+                <button class="bg-pink-400 w-full py-2 text-white font-semibold rounded-lg">Calculate</button>
+             </div>
+             <div class="bg-yellow-300 grid justify-items-center px-14 py-14">
+                <div class="mx-4">
+                 <img src="images/ellipse.png" alt="" srcset="">
+                </div>
+                <h2 class="mt-8">Triangle</h2>
+                <h4 class="mb-5">Area(A)= .5 * b * h</h4>
+                <div class="flex gap-4 mb-8 mx-1">
+                 <input type="number" placeholder="b" class="w-6/12 pl-2"><span>cm</span>
+                 <input type="number" placeholder="a" class="w-6/12 pl-2"><span>cm</span>
+                </div>
+                <button class="bg-pink-400 w-full py-2 text-white font-semibold rounded-lg">Calculate</button>
+             </div>
+         </div>
+
+        </div>
+    <div class="md:w-3/12  ">
+        
+        <div class="bg-yellow-300 grid justify-items-center px-5 py-14"> 
+            <h2 class="font-bold underline">Area Calculation</h2>
+            <div  id="table-container">
+                <tbody class="flex">
+                    <th>1</th>
+                    <td>Triangle</td>
+                    <td>40<span>cm</span></td>
+                    <td><button class="bg-red-300 text-sm ml-2">Convert to m</button>
+                    </div></td>
+                </tbody>
+            </div>
+        </div>
+       
+    </div>
+    </div>
+   </section>
+    
+   <script src="app.js"></script>
+</body>
+</html>
