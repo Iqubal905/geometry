@@ -1,4 +1,4 @@
-
+let serial = 0;
 function getInputValueById(elementId){
   const getElement = document.getElementById(elementId);
   
@@ -11,10 +11,10 @@ function createTableElement(geom){
     const container = document.getElementById("table-container");
     const tr = document.createElement('tr');
     tr.innerHTML =`
-    <td>${1}</td>
+    <td>${serial}</td>
     <td class="pr-2 pl-1">${geom}</td>
     <td>${area}</td>
-    <td><sup>2</sup></td>
+    <td><sup>2</sup><span>cm</span></td>
     <td><button class="bg-red-300 text-sm ml-2">Convert to m</button>
     `;
     container.appendChild(tr);
@@ -23,6 +23,7 @@ function createTableElement(geom){
 let area 
 
 document.getElementById('triangle-btn').addEventListener('click', function(){
+ 
     const inputValueA = getInputValueById('triangle-inputA')
     const inputValueB = getInputValueById('triangle-inputB')
     
@@ -34,6 +35,7 @@ document.getElementById('triangle-btn').addEventListener('click', function(){
         alert('Cannot be negetive number')
         return false
           }else{
+            serial += 1;
       area =  0.5 * inputValueA  * inputValueB    
     }
   } 
